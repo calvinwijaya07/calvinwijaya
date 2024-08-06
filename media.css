@@ -1,36 +1,26 @@
 /* ------Desktop Size------ */
 @media (max-width: 1024px) {
 
-    .header-logo p {
-        font-size: 1.8rem;
-    }
-
     .main-intro {
         display: flex;
         align-items: center;
         text-align: left;
         justify-content: center;
         width: 100%;
-
     }
 
     .aboutme-text {
-        width: 100%;
+        width: 50%;
     }
 
     .contact-text {
-        width: 100%;
+        width: 50%;
     }
 }
 
 /* ------Tablet Size------ */
 
 @media (max-width: 768px) {
-
-.header-logo p {
-    font-size: 1.5rem;
-}
-
    nav {
     padding: 10px;
     position: absolute;
@@ -95,22 +85,27 @@
     padding-bottom: none;
    }
 
-   .skills-intro {
-    text-align: center;
-   }
-
-   .portfolio-intro-text {
-    text-align: center;
-   }
-
    .sc-icn .bx {
     font-size: 2.5rem;
    }
+
+   .aboutme-text {
+    width: 100%;
+}
+
+.contact-text {
+    width: 100%;
+}
+
 }
 
 /* ------Mobile Size------ */
 
 @media (max-width: 475px) {
+
+    .skills-paragraph-text h2 {
+        text-align: center;
+    }
 
     .main-intro p {
         padding-left: 20px;
@@ -120,13 +115,8 @@
         text-align: center;
     }
 
-    .header-logo p {
-        font-size: 1.3rem;
-    }
-
-    .main-img img {
-        width: 250px;
-        height: 250px;
+    .portfolio-intro-text h2 {
+        text-align: center;
     }
 
     .aboutme-intro img {
@@ -137,6 +127,10 @@
     .contact-img img  {
         width: 250px;
         height: 250px;
+    }
+
+    .contact-text h2 {
+        text-align: center;
     }
 
     .sc-icn {
