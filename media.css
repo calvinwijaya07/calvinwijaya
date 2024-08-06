@@ -1,0 +1,153 @@
+/* ------Desktop Size------ */
+@media (max-width: 1024px) {
+
+    .header-logo p {
+        font-size: 1.8rem;
+    }
+
+    .main-intro {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    .aboutme-text {
+        width: 100%;
+    }
+
+    .contact-text {
+        width: 100%;
+    }
+}
+
+/* ------Tablet Size------ */
+
+@media (max-width: 768px) {
+
+.header-logo p {
+    font-size: 1.5rem;
+}
+
+   nav {
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 65px;
+    width: 100%;
+    background: var(--bg-color-1);
+    z-index: 10;
+    overflow: hidden;
+   }
+
+   nav ul {
+    display: none;
+   }
+
+   nav ul.active {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    animation: fadeIn 1s;
+   }
+
+   @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+   nav ul li {
+    border-bottom: 1.5px solid var(--primary-color);
+    padding: 10px;
+    border-radius: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   nav ul li a {
+    border: none;
+   }
+
+   .burger-menu {
+    display: block;
+   }
+
+   nav ul li:first-child a {
+    border-bottom: none;
+   }
+
+   nav ul li a:active {
+    border-bottom: none;
+    padding-bottom: none;
+   }
+
+   nav ul li a:hover {
+    border-bottom: none;
+    padding-bottom: none;
+   }
+
+   .skills-intro {
+    text-align: center;
+   }
+
+   .portfolio-intro-text {
+    text-align: center;
+   }
+
+   .sc-icn .bx {
+    font-size: 2.5rem;
+   }
+}
+
+/* ------Mobile Size------ */
+
+@media (max-width: 475px) {
+
+    .main-intro p {
+        padding-left: 20px;
+    }
+
+    .main-intro h2 {
+        text-align: center;
+    }
+
+    .header-logo p {
+        font-size: 1.3rem;
+    }
+
+    .main-img img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .aboutme-intro img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .contact-img img  {
+        width: 250px;
+        height: 250px;
+    }
+
+    .sc-icn {
+        gap: 12px;
+    }
+
+    .sc-icn .bx {
+        font-size: 1.5rem;
+    }
+
+    .footer-content {
+        font-size: 0.7rem;
+    }
+}
