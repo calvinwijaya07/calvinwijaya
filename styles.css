@@ -11,13 +11,37 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: 'Montserrat', sans-serif;
   }
 
 html, body {
     scroll-behavior: smooth;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 1.6;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 1.6;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 /* ---------------Header--------------- */
@@ -125,7 +149,6 @@ nav ul li:first-child a {
 main {
     background: var(--bg-color-1);
     /* border: 3px solid red; */
-    width: 100%;
     height: auto;
     padding: 10px;
     display: flex;
@@ -194,8 +217,8 @@ main {
 }
 
 .main-img img {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     cursor: pointer;
     animation: spin 5s linear;
@@ -293,7 +316,6 @@ main {
     height: 350px;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
     gap: 8px;
 }
@@ -531,7 +553,7 @@ main {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        gap: 28px;
+        gap: 14px;
     }
 
 .category {
@@ -539,10 +561,9 @@ main {
     border: 1.5px solid var(--primary-color);
     border-radius: 2px;
     width: 300px;
-    height: 288px;
+    height: 250px;
     padding: 10px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -552,10 +573,8 @@ main {
 }
 
 .category img {
-    display: inline-block;
     width: 250px;
     height: 200px;
-    margin: 10px;
 }
 
 /* --------------- About Me Section --------------- */
@@ -608,8 +627,8 @@ main {
     border: 2.5px solid var(--primary-color);
     padding: 10px;
     margin: 10px;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     box-shadow: -1px 3px 19px rgba(255,199,0,0.55);
     transition: 0.3s ease-in-out
@@ -743,8 +762,8 @@ button:active {
 }
 
 .contact-img img {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border: 2.5px solid var(--primary-color);
     border-radius: 50%;
     padding: 10px;
