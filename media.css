@@ -58,6 +58,21 @@
         margin: 0 auto;
     }
 
+    .main-img img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .aboutme-intro img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .contact-img img {
+        width: 250px;
+        height: 250px;
+    }
+
     .aboutme-text {
         width: 100%;
     }
@@ -171,6 +186,21 @@
 
 @media (max-width: 475px) {
 
+    .main-img img {
+        width: 225px;
+        height: 225px;
+    }
+
+    .aboutme-intro img {
+        width: 225px;
+        height: 225px;
+    }
+
+    .contact-img img {
+        width: 225px;
+        height: 225px;
+    }
+
     h1 {
         font-size: 2rem;
         line-height: 1.6;
@@ -231,6 +261,22 @@
 }
 
 @media (max-width: 370px) {
+
+    .main-img img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .aboutme-intro img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .contact-img img {
+        width: 200px;
+        height: 200px;
+    }
+
     .bx {
         font-size: 1rem;
     }
