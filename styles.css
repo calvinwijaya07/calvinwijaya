@@ -68,11 +68,15 @@ header {
 
 .header-logo {
     /* border: 3px solid red; */
-    display: inline-block;
-    padding: 4px;
+    display: block;
     margin-right: 10px;
+    cursor: pointer;
+}
+
+.header-logo p {
     color: var(--text-color);
     font-size: 2rem;
+    font-weight: bold;
 }
 
 nav {
@@ -150,7 +154,6 @@ main {
     background: var(--bg-color-1);
     /* border: 3px solid red; */
     height: auto;
-    padding: 10px;
     display: flex;
     margin-top: 70px;
 }
@@ -167,7 +170,7 @@ main {
     flex-wrap: wrap-reverse;
     align-items: center;
     justify-content: center;
-    gap: 48px;
+    gap: 32px;
 }
 
 .main-intro {
@@ -177,6 +180,7 @@ main {
     color: var(--text-color);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 14px;
 }
 
@@ -209,19 +213,15 @@ main {
     transition: all 0.1s ease-in;
 }
 
-.main-img {
-    border: 2.5px solid var(--primary-color);
-    padding: 10px;
-    border-radius: 50%;
-    box-shadow: -1px 3px 19px -3px rgba(255,199,0,0.55);
-}
-
 .main-img img {
     width: 250px;
     height: 250px;
+    border: 2.5px solid var(--primary-color);
+    padding: 10px;
     border-radius: 50%;
     cursor: pointer;
     animation: spin 5s linear;
+    box-shadow: -1px 3px 19px -3px rgba(255,199,0,0.55);
 }
 
 @keyframes spin {
@@ -307,9 +307,13 @@ main {
 }
 
 .skills-card {
-    border: 1.5px solid var(--primary-color);
+    border: 1.5px solid rgba(255, 217, 79, 0.485);
     border-radius: 2px;
-    background: linear-gradient(to bottom, #1E1E1E, #111111);
+    background: rgba( 0, 0, 0, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba(242, 181, 14, 0.164);
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 10px;
     padding: 20px;
     margin: 10px;
     width: 300px;
@@ -318,6 +322,12 @@ main {
     flex-direction: column;
     justify-content: center;
     gap: 8px;
+    transform: scale(0.94);
+}
+
+.skills-card:hover {
+    transform: scale(0.98);
+    transition: all 0.3s ease-in-out;
 }
 
 .card-title {
@@ -331,13 +341,12 @@ main {
     
 }
 
-.bx {
+.skills-card .bx {
     /* border: 3px solid red; */
+    color: var(--text-color);
     padding: 10px;
     margin: 8px auto;
     font-size: 3rem;
-    width: 110px;
-    height: 75px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -463,7 +472,6 @@ main {
     /* border: 3px solid red; */
     width: 100%;
     height: auto;
-    padding: 10px;
     color: var(--text-color);
 }
 
@@ -487,6 +495,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
     gap: 14px;
 }
@@ -545,43 +554,47 @@ main {
 }
 
 /* Port Category */
-    .portfolio-items {
-        /* border: 3px solid red; */
-        padding: 10px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        gap: 14px;
-    }
+.portfolio-items {
+    /* border: 3px solid red; */
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
 
 .category {
-    background: linear-gradient(to bottom, #1E1E1E, #111111);
-    border: 1.5px solid var(--primary-color);
+    border: 1.5px solid rgba(255, 217, 79, 0.485);
     border-radius: 2px;
-    width: 300px;
+    background: rgba( 0, 0, 0, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba(242, 181, 14, 0.164);
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    width: 280px;
     height: 250px;
     padding: 10px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     font-weight: bold;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     overflow: hidden;
 }
 
 .category img {
     width: 250px;
     height: 200px;
+    margin: 0 auto;
+    padding-bottom: 10px;
 }
 
 /* --------------- About Me Section --------------- */
 
 .about-me {
     /* border: 3px solid red; */
-    padding: 10px;
     background: var(--bg-color-2);
     width: 100%;
     height: auto;
@@ -620,7 +633,7 @@ main {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 32px;
+    gap: 14px;
 }
 
 .aboutme-intro img {
@@ -655,7 +668,6 @@ main {
 .contact {
     /* border: 3px solid red; */
     background: var(--bg-color-1);
-    padding: 10px;
     color: var(--text-color);
 }
 
@@ -689,7 +701,6 @@ main {
 .contact-text {
     /* border: 3px solid red; */
     padding: 10px;
-    margin: 10px;
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -711,22 +722,41 @@ main {
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
 }
 
-.sc-icn .bx {
+.bx {
     /* border: 3px solid red; */
-    width: 48px;
-    height: 48px;
-    padding: 10px;
+    font-size: 2.5rem;
+    padding: 8px;
+    color: var(--primary-color);
 }
 
-.sc-icn .bx:hover {
-    transform: scale(0.98);
+.icn-link {
+    /* border: 3px solid red; */
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 4px;
 }
 
-.sc-icn .bx:active {
+.icn-link a {
+    color: var(--text-color);
+    font-size: 0.8rem;
+}
+
+.icn-link:hover {
     transform: scale(0.95);
+    transition: all 0.3s ease-in-out;
+}
+
+.icn-link:active {
+    transform: scale(0.80);
 }
 
 button {
@@ -780,7 +810,7 @@ footer {
     align-items: center;
     justify-content: center;
     color: var(--text-color);
-    border-top: 2.5px solid var(--primary-color);
+    border-top: 1.5px solid var(--primary-color);
 }
 
 .footer-content {
