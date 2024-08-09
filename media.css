@@ -1,26 +1,98 @@
 /* ------Desktop Size------ */
-@media (max-width: 1024px) {
-
-    .main-intro {
-        display: flex;
-        align-items: center;
-        text-align: left;
-        justify-content: center;
-        width: 100%;
+@media (max-width: 1100px) {
+    .skills-card {
+        width: 250px;
+        height: 280px;
+        gap: 4px;
     }
 
-    .aboutme-text {
-        width: 50%;
+    .skills-card .bx {
+        font-size: 2rem;
     }
 
-    .contact-text {
-        width: 50%;
+    .skills-card p {
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+        line-height: 1.6;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+        line-height: 1.6;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+        line-height: 1.6;
+    }
+    
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .sc-icn {
+        gap: 32px;
     }
 }
 
 /* ------Tablet Size------ */
 
-@media (max-width: 768px) {
+@media (max-width: 865px) {
+    .main-intro {
+        width: 100%;
+    }
+
+    .main-intro h3 {
+        text-align: center;
+    }
+
+    .main-intro h2 {
+        text-align: center;
+    }
+
+    .main-intro button {
+        margin: 0 auto;
+    }
+
+    .aboutme-text {
+        width: 100%;
+    }
+
+    .sc-icn {
+        gap: 24px;
+    }
+
+    .bx {
+        font-size: 2rem;
+       }
+}
+
+@media (max-width: 786px) {
+
+    h1 {
+        font-size: 2rem;
+        line-height: 1.6;
+    }
+    
+    h2 {
+        font-size: 1.6rem;
+        line-height: 1.6;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+        line-height: 1.6;
+    }
+    
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
    nav {
     padding: 10px;
     position: absolute;
@@ -85,17 +157,13 @@
     padding-bottom: none;
    }
 
-   .sc-icn .bx {
-    font-size: 2.5rem;
+   .contact-text {
+    width: 100%;
    }
 
-   .aboutme-text {
-    width: 100%;
-}
-
-.contact-text {
-    width: 100%;
-}
+   .portfolio-intro-text h2 {
+    text-align: center;
+   }
 
 }
 
@@ -103,15 +171,27 @@
 
 @media (max-width: 475px) {
 
+    h1 {
+        font-size: 2rem;
+        line-height: 1.6;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        line-height: 1.6;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+        line-height: 1.6;
+    }
+    
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
     .skills-paragraph-text h2 {
-        text-align: center;
-    }
-
-    .main-intro p {
-        padding-left: 20px;
-    }
-
-    .main-intro h2 {
         text-align: center;
     }
 
@@ -134,14 +214,28 @@
     }
 
     .sc-icn {
-        gap: 12px;
+        gap: 14px;
     }
 
     .sc-icn .bx {
         font-size: 1.5rem;
     }
 
-    .footer-content {
+    .icn-link a {
         font-size: 0.7rem;
+    }
+
+    .footer-content {
+        font-size: 0.4rem;
+    }
+}
+
+@media (max-width: 370px) {
+    .bx {
+        font-size: 1rem;
+    }
+
+    .icn-link a {
+        font-size: 0.6rem;
     }
 }
