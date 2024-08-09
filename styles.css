@@ -214,8 +214,8 @@ main {
 }
 
 .main-img img {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     border: 2.5px solid var(--primary-color);
     padding: 10px;
     border-radius: 50%;
@@ -640,8 +640,8 @@ main {
     border: 2.5px solid var(--primary-color);
     padding: 10px;
     margin: 10px;
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     box-shadow: -1px 3px 19px rgba(255,199,0,0.55);
     transition: 0.3s ease-in-out
@@ -792,8 +792,8 @@ button:active {
 }
 
 .contact-img img {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     border: 2.5px solid var(--primary-color);
     border-radius: 50%;
     padding: 10px;
