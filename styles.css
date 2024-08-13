@@ -149,9 +149,9 @@ nav ul li:first-child a {
 
 main {
     background: var(--bg-color-1);
-    /* border: 3px solid red; */
+    border: 3px solid red;
     padding: 10px;
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     margin-top: 85px;
 }
@@ -194,7 +194,7 @@ main .bx:active {
 }
 
 .main-content {
-    /* border: 3px solid blue; */
+    border: 3px solid blue;
     padding: 10px;
     margin: 0 auto;
     display: flex;
