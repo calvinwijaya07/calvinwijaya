@@ -151,7 +151,7 @@ main {
     /* border: 3px solid red; */
     background: var(--bg-color-1);
     padding: 10px;
-    min-height: 80vh;
+    min-height: 90vh;
     display: flex;
     margin-top: 85px;
 }
