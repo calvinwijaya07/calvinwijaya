@@ -190,7 +190,6 @@ main .bx:active {
     padding: 10px;
     display: flex;
     margin: 0 auto;
-    align-items: center;
     width: 90%;
 }
 
