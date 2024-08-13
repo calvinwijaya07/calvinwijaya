@@ -148,10 +148,10 @@ nav ul li:first-child a {
 /* ---------------Main Section--------------- */
 
 main {
-/*     background: var(--bg-color-1); */
+    background: var(--bg-color-1);
     border: 3px solid red;
     padding: 10px;
-    min-height: 90vh;
+    min-height: 80vh;
     display: flex;
     margin-top: 85px;
 }
@@ -194,7 +194,7 @@ main .bx:active {
 }
 
 .main-content {
-/*     border: 3px solid blue; */
+    border: 3px solid blue;
     padding: 10px;
     margin: 0 auto;
     display: flex;
@@ -257,12 +257,13 @@ main .bx:active {
 
 /* --------------- Skills Section --------------- */
 
-.skills {
+section {
     /* border: 3px solid white; */
     height: auto;
     padding: 10px;
     background: var(--bg-color-2);
     color: var(--text-color);
+    min-height: 90vh;
 }
 
 .skills-wrapper {
@@ -499,12 +500,13 @@ main .bx:active {
 
 /* --------------- Portfolio Section --------------- */
 
-.portfolio {
+section {
     background: var(--bg-color-1);
     /* border: 3px solid white; */
     height: auto;
     color: var(--text-color);
     padding: 10px;
+    min-height: 90vh;
 }
 
 .portfolio-content {
@@ -637,12 +639,13 @@ main .bx:active {
 
 /* --------------- About Me Section --------------- */
 
-.about-me {
+section {
     /* border: 3px solid red; */
     background: var(--bg-color-2);
     padding: 10px;
     height: auto;
     color: var(--text-color);
+    min-height: 90vh;
 }
 
 .aboutme-content {
@@ -702,11 +705,12 @@ main .bx:active {
 
 /* --------------- Contact Section --------------- */
 
-.contact {
+section {
     /* border: 3px solid red; */
     padding: 10px;
     background: var(--bg-color-1);
     color: var(--text-color);
+    min-height: 90vh;
 }
 
 .contact-wrapper {
