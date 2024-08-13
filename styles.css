@@ -151,7 +151,7 @@ main {
     background: var(--bg-color-1);
     /* border: 3px solid red; */
     padding: 10px;
-    height: 90vw;
+    height: auto;
     display: flex;
     margin-top: 85px;
 }
@@ -190,6 +190,7 @@ main .bx:active {
     padding: 10px;
     display: flex;
     margin: 0 auto;
+    align-items: center;
     width: 90%;
 }
 
