@@ -151,7 +151,7 @@ main {
     background: var(--bg-color-1);
     /* border: 3px solid red; */
     padding: 10px;
-    height: auto;
+    height: 100vh;
     display: flex;
     margin-top: 85px;
 }
