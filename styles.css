@@ -17,25 +17,22 @@ html, body {
     scroll-behavior: smooth;
     overflow-x: hidden;
     overflow-y: auto;
-}
-
-body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+    background: var(--bg-color-1);
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.986rem;
     line-height: 1.6;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.488rem;
     line-height: 1.6;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 2.074rem;
     line-height: 1.6;
 }
 
@@ -153,19 +150,53 @@ nav ul li:first-child a {
 main {
     background: var(--bg-color-1);
     /* border: 3px solid red; */
+    padding: 10px;
     height: auto;
     display: flex;
-    margin-top: 70px;
+    margin-top: 85px;
+}
+
+main .bx {
+    /* border: 3px solid red; */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2.5rem;
+    transition: ease-out 0.1s;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 99;
+    cursor: pointer;
+}
+
+main .bx {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+main .bx:hover {
+    transform: scale(1.2);
+    transition: all 0.3 ease-in-out;
+
+}
+
+main .bx:active {
+    transform: scale(0.95);
+    transition: all 0.3 ease-in-out;
 }
 
 .main-wrapper {
     /* border: 3px solid red; */
     padding: 10px;
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
 }
 
 .main-content {
     /* border: 3px solid blue; */
     padding: 10px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap-reverse;
     align-items: center;
@@ -181,11 +212,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 14px;
-}
-
-.main-intro h2 {
-    color: var(--primary-color);
 }
 
 .main-intro button {
@@ -214,8 +240,8 @@ main {
 }
 
 .main-img img {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     border: 2.5px solid var(--primary-color);
     padding: 10px;
     border-radius: 50%;
@@ -232,8 +258,7 @@ main {
 /* --------------- Skills Section --------------- */
 
 .skills {
-    /* border: 3px solid red; */
-    width: 100%;
+    /* border: 3px solid white; */
     height: auto;
     padding: 10px;
     background: var(--bg-color-2);
@@ -243,6 +268,8 @@ main {
 .skills-wrapper {
     /* border: 3px solid red; */
     padding: 10px;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -250,19 +277,25 @@ main {
 }
 
 .skills-intro {
-    /* border: 3px solid red; */
+    /* border: 3px solid green; */
+    width: 90%;
     padding: 10px;
-    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 14px;
 }
 
 .skills-paragraph-text {
+    /* border: 3px solid red; */
     color: var(--primary-color);
     font-weight: bold;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.skills-intro h3 {
+    /* border: 3px solid red; */
+    padding: 10px;
+    margin: 10px auto;
 }
 
 /* Card Section */
@@ -298,7 +331,6 @@ main {
 .skills-card-wrapper {
     /* border: 3px solid red; */
     padding: 10px;
-    margin: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -469,14 +501,9 @@ main {
 
 .portfolio {
     background: var(--bg-color-1);
-    /* border: 3px solid red; */
-    width: 100%;
+    /* border: 3px solid white; */
     height: auto;
     color: var(--text-color);
-}
-
-.portfolio-wrapper {
-    /* border: 3px solid red; */
     padding: 10px;
 }
 
@@ -484,6 +511,8 @@ main {
     /* border: 3px solid red; */
     padding: 10px;
     display: flex;
+    width: 90%;
+    margin: 0 auto;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -491,18 +520,24 @@ main {
 
 .portfolio-intro-text {
     /* border: 3px solid red; */
+    width: 90%;
     padding: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    gap: 14px;
 }
 
-.portfolio-intro-text .port-title-paragraph {
+.port-title-paragraph {
+    /* border: 3px solid red; */
+    margin: 0 auto;
+    padding: 10px;
     color: var(--primary-color);
     font-weight: bold;
+}
+
+.portfolio-intro-text h3 {
+    /* border: 3px solid red; */
+    margin: 10px auto;
+    padding: 10px;
 }
 
 /* ------Portfolio Project Section------ */
@@ -510,7 +545,6 @@ main {
 .port-nav {
     /* border: 3px solid blue; */
     padding: 10px;
-    margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -567,13 +601,12 @@ main {
 
 .category {
     border: 1.5px solid rgba(255, 217, 79, 0.485);
-    border-radius: 2px;
+    border-radius: 10px;
     background: rgba( 0, 0, 0, 0.1 );
     box-shadow: 0 8px 32px 0 rgba(242, 181, 14, 0.164);
     backdrop-filter: blur( 4.5px );
     -webkit-backdrop-filter: blur( 4.5px );
     width: 280px;
-    height: 250px;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -582,11 +615,22 @@ main {
     font-weight: bold;
     transition: all 0.3s ease-in-out;
     overflow: hidden;
+    transform: scale(0.94);
+}
+
+.category a {
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.category:hover {
+    transform: scale(0.98);
+    transition: all 0.3s ease-in-out;
 }
 
 .category img {
-    width: 250px;
-    height: 200px;
+    width: 100%;
+    object-fit: cover;
     margin: 0 auto;
     padding-bottom: 10px;
 }
@@ -596,52 +640,52 @@ main {
 .about-me {
     /* border: 3px solid red; */
     background: var(--bg-color-2);
-    width: 100%;
+    padding: 10px;
     height: auto;
     color: var(--text-color);
 }
 
-.aboutme-wrapper {
-    /* border: 3px solid red; */
-    padding: 10px;
-}
-
 .aboutme-content {
     /* border: 3px solid red; */
+    width: 90%;
+    margin: 0 auto;
     padding: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .about-intro-text {
     /* border: 3px solid red; */
     padding: 10px;
-    margin: 10px;
-    width: fit-content;
-    display: block;
+    margin: 0 auto;
     font-weight: bold;
     color: var(--primary-color);
 }
 
 .aboutme-intro {
     /* border: 3px solid red; */
-    padding: 10px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    gap: 32px;
     align-items: center;
     justify-content: center;
-    gap: 14px;
+    
+}
+
+.aboutme-text {
+    /* border: 3px solid green; */
+    padding: 10px;
+    width: 60%;
+
 }
 
 .aboutme-intro img {
     border: 2.5px solid var(--primary-color);
     padding: 10px;
     margin: 10px;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     box-shadow: -1px 3px 19px rgba(255,199,0,0.55);
     transition: 0.3s ease-in-out
@@ -656,24 +700,19 @@ main {
     cursor: pointer;
 }
 
-.aboutme-text {
-    /* border: 3px solid red; */
-    padding: 10px;
-    margin: 10px;
-    width: 60%;
-}
-
 /* --------------- Contact Section --------------- */
 
 .contact {
     /* border: 3px solid red; */
+    padding: 10px;
     background: var(--bg-color-1);
     color: var(--text-color);
 }
 
 .contact-wrapper {
     /* border: 3px solid red; */
-    padding: 10px;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -682,6 +721,7 @@ main {
 
 .contact-intro {
     /* border: 3px solid red; */
+    margin-top: 10px;
     padding: 10px;
     font-weight: bold;
     color: var(--primary-color);
@@ -690,55 +730,48 @@ main {
 .contact-content {
     /* border: 3px solid blue; */
     padding: 10px;
-    margin: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
     align-items: center;
     justify-content: center;
+    gap: 32px;
 }
 
 .contact-text {
-    /* border: 3px solid red; */
+    /* border: 3px solid green; */
     padding: 10px;
     width: 60%;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-.contact-text h2 {
-    /* border: 3px solid red; */
-    padding: 10px;
-}
-
-.contact-text p {
-    /* border: 3px solid red; */
-    padding: 10px;
+.contact-text h3 {
+    /* border: 3px solid green; */
+    margin: 10px 0px 10px 0px;
 }
 
 .sc-icn {
-    /* border: 3px solid red; */
+    /* border: 3px solid orange; */
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 14px;
 }
 
 .bx {
     /* border: 3px solid red; */
-    font-size: 2.5rem;
-    padding: 8px;
+    font-size: 1.4rem;
+    padding: 4px;
     color: var(--primary-color);
 }
 
 .icn-link {
-    /* border: 3px solid red; */
+    /* border: 3px solid blue; */
     padding: 4px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -751,49 +784,18 @@ main {
 }
 
 .icn-link:hover {
-    transform: scale(0.95);
+    transform: scale(1.2);
     transition: all 0.3s ease-in-out;
 }
 
 .icn-link:active {
-    transform: scale(0.80);
-}
-
-button {
-    width: 142px;
-    height: 48px;
-    margin-top: 10px;
-    color: var(--primary-color);
-    font-size: 1em;
-    font-weight: bold;
-    background: transparent;
-    border: 2.5px solid var(--primary-color);
-    cursor: pointer;
-    box-shadow: inset 0 0 0 0 transparent;
-    transition: ease-out 0.4s;
-}
-
-button:hover {
-    color: var(--bg-color-1);
-    box-shadow: inset 143px 0 0 0 var(--primary-color);
-}
-
-button:active {
-    background: var(--primary-color);
-    color: var(--bg-color-1);
-    transform: scale(0.98);
-    transition: all 0.1s ease-in;
-}
-
-.contact-img {
-    /* border: 3px solid red; */
-    padding: 10px;
-    margin: 10px;
+    transform: scale(0.9);
+    transition: all 0.3s ease-in-out;
 }
 
 .contact-img img {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     border: 2.5px solid var(--primary-color);
     border-radius: 50%;
     padding: 10px;
@@ -820,7 +822,87 @@ footer {
     text-align: center;
 }
 
-.copy {
-    color: var(--primary-color);
-    font-weight: bold;
+/* ============ Project Section ============ */
+article {
+    /* border: 3px solid red; */
+    padding: 10px;
+    margin: 10px;
+    margin-top: 85px;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.header {
+    border: 3px solid blue;
+    padding: 10px;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    gap: 14px;
+    margin: 0 auto;
+}
+
+.header h1 {
+    /* border: 3px solid red; */
+    padding: 10px;
+}
+
+.profile {
+    /* border: 3px solid orange; */
+    padding: 10px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    padding: 4px;
+}
+
+.profile-intro {
+    /* border: 3px solid red; */
+    padding: 4px;
+}
+
+.profile-intro p {
+    font-size: 0.6rem;
+}
+
+.profile-intro time {
+    font-size: 0.5rem;
+}
+
+/* Container */
+
+.article-container {
+    /* border: 3px solid blue; */
+    padding: 10px;
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.article-container img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.contact-sct {
+    /* border: 3px solid red; */
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
 }
