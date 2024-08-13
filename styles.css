@@ -257,7 +257,7 @@ main .bx:active {
 
 /* --------------- Skills Section --------------- */
 
-section {
+.skills {
     /* border: 3px solid white; */
     height: auto;
     padding: 10px;
@@ -500,7 +500,7 @@ section {
 
 /* --------------- Portfolio Section --------------- */
 
-section {
+.portfolio {
     background: var(--bg-color-1);
     /* border: 3px solid white; */
     height: auto;
@@ -639,7 +639,7 @@ section {
 
 /* --------------- About Me Section --------------- */
 
-section {
+.about-me {
     /* border: 3px solid red; */
     background: var(--bg-color-2);
     padding: 10px;
@@ -705,7 +705,7 @@ section {
 
 /* --------------- Contact Section --------------- */
 
-section {
+.contact {
     /* border: 3px solid red; */
     padding: 10px;
     background: var(--bg-color-1);
