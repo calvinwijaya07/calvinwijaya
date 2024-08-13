@@ -38,5 +38,26 @@ contactButton.addEventListener("click", function() {
     window.location.href = "mailto:awiwijaya123@gmail.com?subject=Website Inquiry";
 });
 
+// up button
+const backToTopButton = document.querySelector('.bx');
+
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 150) { // Menampilkan tombol saat scroll lebih dari 100px
+    backToTopButton.style.opacity = '1';
+    backToTopButton.style.pointerEvents = 'auto';
+  } else {
+    backToTopButton.style.opacity = '0';
+    backToTopButton.style.pointerEvents = 'none';
+  }
+});
+
+backToTopButton.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' // Menggulir ke atas dengan halus
+  });
+});
+
+
 
 
