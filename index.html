@@ -4,317 +4,302 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calvin Wijaya</title>
+    <title>Document</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
-    <link rel="shortcut icon" href="img/fav-icon.png" type="image/x-icon">
 </head>
 
 <body>
-    <!-- header -->
-    <header>
-        <div class="header-wrapper">
-            <div class="header-logo">
-                <a href="index.html">
-                    <p>CW</p>
-                </a>
+    <!-- Navigation Section -->
+    <header class="nav-menu" id="#header">
+        <div class="my-logo">
+            <p>CW</p>
+        </div>
+        <div class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="menu-list">
+            <ul>
+                <li><a href="#main">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#">Download CV</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main Section -->
+    <main id="#main">
+        <a href="#header"><i class='bx bx-up-arrow-circle' style="color: var(--primary-color);"></i></a>
+        <div class="main-content">
+            <div class="main-intro">
+                <h3>Hi, I'm Calvin</h3>
+                <h2><span style="color: var(--primary-color);">Front End Dev & UIUX Designer</span></h2>
+                <p>I am a passionate Indonesian designer dedicated to creating user-centric designs & developing
+                    websites and applications that perfectly match user needs.</p>
+                <p>Need professional website design and development services?</p>
+                <p>I'm here to help. Let's create a website that attracts more customers and strengthens your online
+                    presence.</p>
+                <button type="button">Let's Talk!</button>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#main">Home</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#about-me">About Me</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#">Download CV</a></li>
-                </ul>
-            </nav>
-            <!-- burger menu -->
-            <div class="burger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="main-img">
+                <img src="img/gambar1.png" alt="Calvin Wijaya Profile">
             </div>
         </div>
-    </header>
-    <!-- Main -->
-    <main id="main">
-        <a href="#main"><i class='bx bx-up-arrow-circle'></i></a>
-            <div class="main-wrapper">
-                <div class="main-content">
-                    <div class="main-intro">
-                        <h3><span style="font-weight: bold;">Hi, I'm Calvin</span></h3>
-                        <h2><span style="color: var(--primary-color);">Front End Dev & UIUX Designer</h2>
-                        <p>I am a passionate Indonesian designer dedicated to creating user-centric designs & developing
-                            websites and applications that perfectly match user needs.</p>
-                        <br>
-                        <p>Need professional website design and development services?</p>
-                        <br>
-                        <p>I'm here to help. Let's create a website that attracts more customers and strengthens your online
-                            presence.</p>
-                        <br>
-                        <button type="button" id="contactButton">Contact Me</button>
-                    </div>
-                    <div class="main-img">
-                        <img src="img/gambar1.png" alt="Calvin Wijaya Image">
-                    </div>
-                </div>
+    </main>
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="skl-wrapper">
+            <div class="skl-title">
+                <h4>Skills</h4>
             </div>
-        </main>
-    <!-- Skills -->
-    <section class="skills" id="skills">
-        <div class="skills-wrapper">
-            <div class="skills-intro">
-                <p class="skills-paragraph-text">Skills</p>
+            <div class="skl-intro">
                 <h3>What I'm Good At</h3>
-                <p>I'm passionate about creating digital experiences that users love.</p>
                 <br>
-                <p>I have experience in conducting user research, creating wireframes and prototypes, and evaluating
-                    user interface usability.</p>
+                <p>I'm passionate about creating digital experiences that users love. I have experience in conducting
+                    user research, creating wireframes and prototypes, and evaluating user interface usability.</p>
                 <br>
                 <p>I'm proficient in HTML, CSS, and JavaScript to build interactive prototypes and responsive websites
                     that work seamlessly across different devices.</p>
             </div>
-            <!-- Bagian Skills Card -->
-            <div class="skills-list-wrapper">
-                <!-- Hard Skills Section -->
-                <div class="hard-skills">
-                    <div class="skill-text">
-                        <p class="hard-skill-paragraph">Hard Skills</p>
-                    </div>
-                    <!-- Skills Card -->
-                    <div class="skills-card-wrapper">
-                        <!-- Front End (UTAMA KITA) -->
-                        <div class="skills-card">
-                            <p class="card-title">Front End</p>
-                            <i class='bx bx-code-alt'></i>
-                            <p>HTML</p>
-                            <div class="container">
-                                <div class="skill html">90%</div>
-                            </div>
-                            <p>CSS</p>
-                            <div class="container">
-                                <div class="skill CSS">70%</div>
-                            </div>
-                            <p>Javascript</p>
-                            <div class="container">
-                                <div class="skill Javascript">40%</div>
-                            </div>
+            <div class="skl-content">
+                <p class="technical-skill">Hard Skills</p>
+                <div class="skl-card-wrapper">
+                    <div class="skl-card">
+                        <!-- Front End -->
+                        <h5>Front End</h5>
+                        <i class='bx bx-code-alt'></i>
+                        <p>Html</p>
+                        <div class="container">
+                            <div class="skill html">90%</div>
                         </div>
+                        <p>CSS</p>
+                        <div class="container">
+                            <div class="skill CSS">70%</div>
+                        </div>
+                        <p>Javascript</p>
+                        <div class="container">
+                            <div class="skill JavaScript">40%</div>
+                        </div>
+                    </div>
+                    <div class="skl-card">
                         <!-- UIUX -->
-                        <div class="skills-card">
-                            <p class="card-title">UIUX</p>
-                            <i class='bx bxs-pen'></i>
-                            <p>User Interface</p>
-                            <div class="container">
-                                <div class="skill UI">75%</div>
-                            </div>
-                            <p>User Experience</p>
-                            <div class="container">
-                                <div class="skill UX">70%</div>
-                            </div>
-                            <p>User Research</p>
-                            <div class="container">
-                                <div class="skill research">80%</div>
-                            </div>
+                        <h5>UIUX</h5>
+                        <i class='bx bx-pen'></i>
+                        <p>User Interface</p>
+                        <div class="container">
+                            <div class="skill ui">75%</div>
                         </div>
-                        <!-- AI -->
-                        <div class="skills-card">
-                            <p class="card-title">Other</p>
-                            <i class='bx bxs-bulb'></i>
-                            <p>Copywriting</p>
-                            <div class="container">
-                                <div class="skill Copywriting">70%</div>
-                            </div>
-                            <p>AI analysis</p>
-                            <div class="container">
-                                <div class="skill AI">80%</div>
-                            </div>
-                            <p>Marketing</p>
-                            <div class="container">
-                                <div class="skill marketing">70%</div>
-                            </div>
+                        <p>User Experience</p>
+                        <div class="container">
+                            <div class="skill ux">70%</div>
+                        </div>
+                        <p>Research</p>
+                        <div class="container">
+                            <div class="skill search">80%</div>
+                        </div>
+                    </div>
+                    <div class="skl-card">
+                        <!-- Others -->
+                        <h5>Other</h5>
+                        <i class='bx bxs-bulb'></i>
+                        <p>Copywriting</p>
+                        <div class="container">
+                            <div class="skill copy">70%</div>
+                        </div>
+                        <p>AI Analysis</p>
+                        <div class="container">
+                            <div class="skill analys">80%</div>
+                        </div>
+                        <p>Marketing</p>
+                        <div class="container">
+                            <div class="skill market">70%</div>
                         </div>
                     </div>
                 </div>
-                <!-- Soft Skill Section -->
-                <div class="hard-skills">
-                    <div class="skill-text">
-                        <p class="hard-skill-paragraph">Soft Skills</p>
-                    </div>
-                    <!-- Skills Card -->
-                    <div class="skills-card-wrapper">
+                <!-- Soft Skill -->
+                <p class="technical-skill">Soft Skills</p>
+                <div class="skl-card-wrapper">
+                    <div class="skl-card">
                         <!-- Interpersonal -->
-                        <div class="skills-card">
-                            <p class="card-title">Interpersonal</p>
-                            <i class='bx bxs-conversation'></i>
-                            <p>Communication</p>
-                            <div class="container">
-                                <div class="skill com">90%</div>
-                            </div>
-                            <p>TeamWork</p>
-                            <div class="container">
-                                <div class="skill tw">80%</div>
-                            </div>
-                            <p>Empathy</p>
-                            <div class="container">
-                                <div class="skill emp">75%</div>
-                            </div>
+                        <h5>Interpersonal</h5>
+                        <i class='bx bxs-conversation'></i>
+                        <p>Communication</p>
+                        <div class="container">
+                            <div class="skill cm">90%</div>
                         </div>
+                        <p>Team Work</p>
+                        <div class="container">
+                            <div class="skill tw">80%</div>
+                        </div>
+                        <p>Empathy</p>
+                        <div class="container">
+                            <div class="skill empt">75%</div>
+                        </div>
+                    </div>
+                    <div class="skl-card">
+                        <h5>Personal</h5>
                         <!-- Personal -->
-                        <div class="skills-card">
-                            <p class="card-title">Personal</p>
-                            <i class='bx bxs-brain'></i>
-                            <p>Problem-Solving</p>
-                            <div class="container">
-                                <div class="skill pb">80%</div>
-                            </div>
-                            <p>Decision-Making</p>
-                            <div class="container">
-                                <div class="skill dm">75%</div>
-                            </div>
-                            <p>Time Management</p>
-                            <div class="container">
-                                <div class="skill tm">85%</div>
-                            </div>
+                        <i class='bx bxs-brain'></i>
+                        <p>Problem-Solving</p>
+                        <div class="container">
+                            <div class="skill ps">80%</div>
                         </div>
-                        <!-- Other -->
-                        <div class="skills-card">
-                            <p class="card-title">Other</p>
-                            <i class='bx bxs-bulb'></i>
-                            <p>Creativity</p>
-                            <div class="container">
-                                <div class="skill crea">85%</div>
-                            </div>
-                            <p>Critical Thinking</p>
-                            <div class="container">
-                                <div class="skill ct">80%</div>
-                            </div>
-                            <p>learning aptitude</p>
-                            <div class="container">
-                                <div class="skill la">75%</div>
-                            </div>
+                        <p>Decision-Making</p>
+                        <div class="container">
+                            <div class="skill dm">75%</div>
+                        </div>
+                        <p>Time Management</p>
+                        <div class="container">
+                            <div class="skill tm">85%</div>
+                        </div>
+                    </div>
+                    <div class="skl-card">
+                        <!-- Others -->
+                        <h5>Others</h5>
+                        <i class='bx bxs-bulb'></i>
+                        <p>Creativity</p>
+                        <div class="container">
+                            <div class="skill crea">85%</div>
+                        </div>
+                        <p>Critical Thinking</p>
+                        <div class="container">
+                            <div class="skill ct">80%</div>
+                        </div>
+                        <p>Learning Aptitude</p>
+                        <div class="container">
+                            <div class="skill la">75%</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Portfolio -->
-    <section class="portfolio" id="portfolio">
-        <div class="portfolio-wrapper">
-            <div class="portfolio-content">
-                <div class="portfolio-intro-text">
-                    <p class="port-title-paragraph">Portfolio</p>
-                    <h3>My Masterpiece Collection</h3>
-                    <p>A diverse collection of digital projects that highlight my design and development skills. From
-                        concept to completion, I’m involved in every step of the creative process.</p>
-                    <br>
-                    <p>Explore my portfolio to see how I bring ideas to life!</p>
-                </div>
-                <div class="port-nav">
-                    <ul>
-                        <li id="all"><a data-category="all">All</a></li>
-                        <li id="frontend"><a data-category="frontend">Front End</a></li>
-                        <li id="uiux"><a data-category="uiux">UI/UX</a></li>
-                    </ul>
-                    <div class="portfolio-items">
-                        <!-- Portfolio Item 1 -->
-                        <div class="category" data-category="frontend">
-                            <a href="projects.html">
-                                <img src="img/front end.jpg" alt="">
-                                    <p>Project Title 1</p>
-                            </a>
-                        </div>
-                        <!-- Portfolio Item 2 -->
-                        <div class="category" data-category="uiux">
-                            <a href="projects.html">
-                                <img src="img/uiux.jpg" alt="">
-                                    <p>Project Title 2</p>
-                            </a>
-                        </div>
-                        <!-- Portfolio Item 3 -->
-                        <div class="category" data-category="all">
-                            <a href="projects.html">
-                                <img src="img/uiux.jpg" alt="">
-                                    <p>Project Title 3</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="port-wrapper">
+            <div class="port-title">
+                <h4>Portfolio</h4>
             </div>
-    </section>
-    <!-- About Me -->
-    <section class="about-me" id="about-me">
-        <div class="aboutme-content">
-            <p class="about-intro-text">About Me</p>
-            <div class="aboutme-intro">
-                <img src="img/gambar1.png" alt="#">
-                <div class="aboutme-text">
-                    <p>Hi, I'm Calvin! I'm a designer and developer who loves diving into the digital world.</p>
-                    <br>
-                    <p>I think great design happens when you mix creativity, tech, and understanding your users.With my
-                        experience in UI/UX and front-end development, I'm skilled in Figma, Photoshop, HTML, CSS, and
-                        JavaScript.</p>
-                    <br>
-                    <p>I'm passionate about crafting high-performance and scalable web applications.</p>
+            <div class="port-intro">
+                <h3>My Masterpiece Collection</h3>
+                <br>
+                <p>A diverse collection of digital projects that highlight my design and development skills.</p>
+                <br>
+                <p>From concept to completion, I’m involved in every step of the creative process. Explore my portfolio
+                    to see how I bring ideas to life!</p>
+            </div>
+            <!-- Portofolio Navigation -->
+            <div class="port-nav">
+                <li id="all"><a data-category="all">All</a></li>
+                <li id="frontend"><a data-category="frontend">Front End</a></li>
+                <li id="uiux"><a data-category="uiux">UIUX</a></li>
+            </div>
+            <!-- Portofolio Category Card -->
+            <div class="port-project">
+                <!-- Project 1 -->
+                <div class="project" data-category="frontend">
+                    <a href="project.html">
+                        <img src="img/front end.jpg" alt="Front End">
+                        <p>Project Title 1</p>
+                    </a>
+                </div>
+                <!-- Project 2 -->
+                <div class="project" data-category="uiux">
+                    <a href="project.html">
+                        <img src="img/uiux.jpg" alt="UIUX">
+                        <p>Project Title 2</p>
+                    </a>
+                </div>
+                <!-- Project 3 -->
+                <div class="project" data-category="all">
+                    <a href="project.html">
+                        <img src="img/phone.jpg" alt="Other">
+                        <p>Project Title 3</p>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Contact -->
-    <section class="contact" id="contact">
+    <!-- About Me Section -->
+    <section id="about-me">
+        <div class="aboutme-wrapper">
+            <div class="aboutme-title">
+                <h4>About Me</h4>
+            </div>
+            <div class="aboutme-content">
+                <div class="about-img">
+                    <img src="img/gambar1.png" alt="#">
+                </div>
+                <div class="about-text">
+                    <h3>Lorem Ipsum</h3>
+                    <br>
+                    <p>Hi, I'm Calvin! I'm a designer and developer who loves diving into the digital world. I think
+                        great design happens when you mix creativity, tech, and understanding your users.</p>
+                    <br>
+                    <p>With my experience in UI/UX and front-end development, I'm skilled in Figma, Photoshop, HTML,
+                        CSS, and JavaScript. I'm passionate about crafting high-performance and scalable web
+                        applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact">
         <div class="contact-wrapper">
-            <div class="contact-intro">
-                <p>Contact</p>
+            <div class="contact-title">
+                <h4>Contact</h4>
             </div>
-            <!-- Contact Content -->
             <div class="contact-content">
-                <div class="contact-text">
+                <div class="contact-img">
+                    <img src="img/phone.jpg" alt="Smartphone">
+                </div>
+                <div class="contact-intro">
                     <h3>Ways To Contact Me</h3>
+                    <br>
                     <p>Interested in collaborating on your project?</p>
                     <br>
                     <p>I offer intuitive UI/UX design and high-performance front-end development services. Contact me
                         for a free consultation!</p>
-                    <br>
-                    <div class="sc-icn">
-                        <div class="icn-link">
-                            <i class='bx bxl-gmail'></i>
-                            <a href="mailto:awiwijaya123@gmail.com">Email</a>
+                        <div class="contact-icn">
+                            <div class="icn-link">
+                                <i class='bx bxl-gmail'></i>
+                                <a href="mailto:awiwijaya123@gmail.com">Email</a>
+                            </div>
+                            <div class="icn-link">
+                                <i class='bx bxl-telegram'></i>
+                                <a href="https://t.me/calvinwijayaa" target="_blank" rel="noopener noreferrer">Telegram</a>
+                            </div>
+                            <div class="icn-link">
+                                <i class='bx bxl-instagram-alt'></i>
+                                <a href="https://www.instagram.com/calvinvijay14/" target="_blank"
+                                    rel="noopener noreferrer">Instagram</a>
+                            </div>
+                            <div class="icn-link">
+                                <i class='bx bxl-discord-alt'></i>
+                                <a href="https://discordapp.com/users/calvinwijayaaa" target="_blank"
+                                    rel="noopener noreferrer">Discord</a>
+                            </div>
                         </div>
-                        <div class="icn-link">
-                            <i class='bx bxl-telegram'></i>
-                            <a href="https://t.me/calvinwijayaa" target="_blank" rel="noopener noreferrer">Telegram</a>
-                        </div>
-                        <div class="icn-link">
-                            <i class='bx bxl-instagram-alt'></i>
-                            <a href="https://www.instagram.com/calvinvijay14/" target="_blank"
-                                rel="noopener noreferrer">Instagram</a>
-                        </div>
-                        <div class="icn-link">
-                            <i class='bx bxl-discord-alt'></i>
-                            <a href="https://discordapp.com/users/calvinwijayaaa" target="_blank"
-                                rel="noopener noreferrer">Discord</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-img">
-                    <img src="img/phone.jpg" alt="#">
                 </div>
             </div>
         </div>
     </section>
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer>
         <div class="footer-content">
-            <p><span style="color: var(--primary-color); font-weight: bold;">&copy;</span> 2024 Calvin Wijaya. <strong>Design</strong> and
-                <strong>Develop</strong> with <strong>Love.</strong></p>
+            <p><span style="color: var(--primary-color); font-weight: bold;">&copy;</span> 2024 Calvin Wijaya.
+                <strong>Design</strong> and
+                <strong>Develop</strong> with <strong>Love.</strong>
+            </p>
         </div>
     </footer>
-
     <script src="script.js"></script>
 </body>
 
