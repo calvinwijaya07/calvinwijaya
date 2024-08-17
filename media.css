@@ -1,450 +1,282 @@
-/* ------Laptop Size------ */
-@media (max-width: 1024px) {
-    h1 {
-        font-size: 2rem;
-        line-height: 1.6;
-    }
-    
-    h2 {
-        font-size: 1.8rem;
-        line-height: 1.6;
-    }
-    
-    h3 {
-        font-size: 1.5rem;
-        line-height: 1.6;
-    }
-    
-    p {
-        font-size: 0.8rem;
-        line-height: 1.6;
-    }
-
+/* Mobile Size Medium */
+@media (min-width: 375px) {
     .main-img img {
-        width: 285px;
-        height: 285px;
+        width: 250px;
     }
 
-    .skills-card {
-        width: 290px;
+    .skl-card {
+        width: 250px;
+        height: auto;
     }
 
-    .aboutme-intro img {
-        width: 285px;
-        height: 285px;
+    .project {
+        width: 250px;
+        height: 250px;
+    }
+
+    .project img {
+        width: 200px;
+        height: 180px;
+    }
+
+    .about-img img {
+        width: 250px;
     }
 
     .contact-img img {
-        width: 285px;
-        height: 285px;
+        width: 250px;
     }
 
     .icn-link {
         flex-direction: column;
+        width: 100px;
     }
-
 }
-
-/* ------Tablet Size------ */
-@media (max-width: 992px) {
-    .main-intro {
-        width: 100%;
-        /* margin: 0 auto; */
-    }
-    
-    .main-intro button {
-        margin: 0 auto;
-    }
-    
-    .aboutme-text {
-        width: 100%;
-    }
-    
-    .contact-text {
-        width: 100%;
-       }
-    
-    .contact-text h3 {
-        margin: 0 auto;
-    }
-    
-    .sc-icn {
-        margin: 0 auto;
-    }
-    
+/* Mobile Size Large */
+@media (min-width: 425px) {
     .main-img img {
+        width: 300px;
+    }
+
+    .skl-card {
         width: 250px;
-        height: 250px;
-    }
-    
-    .aboutme-intro img {
-        width: 250px;
-        height: 250px;
-    }
-    
-    .contact-img img {
-        width: 250px;
-        height: 250px;
+        height: auto;
     }
 
-}
-
-@media (max-width: 768px) {
-   nav {
-    padding: 10px;
-    position: absolute;
-    right: 0;
-    top: 65px;
-    width: 100%;
-    background: var(--bg-color-1);
-    z-index: 10;
-    overflow: hidden;
-   }
-
-   nav ul {
-    display: none;
-   }
-
-   nav ul.active {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    animation: fadeIn 1s;
-   }
-
-   @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-20);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-   nav ul li {
-    border-bottom: 1.5px solid var(--primary-color);
-    padding: 10px;
-    border-radius: 1px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   }
-
-   nav ul li a {
-    border: none;
-   }
-
-   .burger-menu {
-    display: block;
-   }
-
-   nav ul li:first-child a {
-    border-bottom: none;
-   }
-
-   nav ul li a:active {
-    border-bottom: none;
-    padding-bottom: none;
-   }
-
-   nav ul li a:hover {
-    border-bottom: none;
-    padding-bottom: none;
-   }
-
-   .main-intro {
-    width: 100%;
-   }
-
-   .aboutme-intro {
-    gap: 28px;
-   }
-
-   .contact-content {
-    gap: 28px;
-   }
-
-   .main-intro button {
-    margin: 0 auto;
-   }
-
-   .aboutme-text {
-    width: 100%;
-   }
-
-   .contact-text {
-    width: 100%;
-   }
-
-   .contact-text h3 {
-    margin: 0 auto;
-   }
-
-   .sc-icn {
-    margin: 0 auto;
-   }
-
-   .main-img img {
-    width: 225px;
-    height: 225px;
+    .project {
+        width: 300px;
+        height: 300px;
     }
 
-    .aboutme-intro img {
-    width: 225px;
-    height: 225px;
+    .project img {
+        width: 280px;
+        height: 240px;
+    }
+
+    .about-img img {
+        width: 300px;
     }
 
     .contact-img img {
-    width: 225px;
-    height: 225px;
+        width: 300px;
     }
 
+    .icn-link {
+        flex-direction: column;
+        width: 120px;
+    }
 }
 
-/* ------Mobile Size------ */
-
-@media (max-width: 425px) {
-    h1 {
-        font-size: 1.6rem;
-        line-height: 1.6;
-    }
-    
-    h2 {
-        font-size: 1.4rem;
-        line-height: 1.6;
-    }
-    
-    h3 {
-        font-size: 1.2rem;
-        line-height: 1.6;
-    }
-    
-    p {
-        font-size: 0.8rem;
-        line-height: 1.6;
+/* Larger Mobile Device */
+@media (min-width: 600px) {
+    .icn-link {
+        flex-direction: column;
+        width: 150px;
     }
 
-    main .bx {
-        font-size: 1.8rem;
-        right: 10px;
+    .skl-card {
+        width: 200px;
+        height: auto;
     }
+}
 
-    .main-wrapper {
-        width: 100%;
-    }
 
-    .main-intro h2 {
-        text-align: center;
-    }
-
-    .main-intro h3 {
-        text-align: center;
-    }
-
+/* Tablet Size */
+@media (min-width: 768px) {
     .main-img img {
-        width: 200px;
-        height: 200px;
-    }
-    
-    .aboutme-intro {
-        gap: 24px;
-    }
-    
-    .contact-content {
-        gap: 24px;
+        width: 400px;
     }
 
-    .aboutme-intro img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .contact-img img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .skills-wrapper {
-        width: 100%;
-    }
-
-    .skills-card {
+    .skl-card {
         width: 250px;
-    }
-
-    .skills-card .bx {
-        font-size: 2rem;
+        height: auto;
+        gap: 12px;
+        padding: 14px;
     }
 
     .container {
-        height: 18px;
+        height: 20px;
     }
 
     .skill {
-        height: 13px;
-        padding: 0.5% 1% 0.5% 1%;
+        height: 18px;
     }
 
-    .portfolio-content {
-        width: 100%;
+    .project {
+        width: 300px;
+        height: 300px;
     }
 
-    .portfolio-intro-text h3 {
-        margin: 0 auto;
+    .project img {
+        width: 280px;
+        height: 240px;
     }
 
-    .aboutme-content {
-        width: 100%;
-    }
-
-    .contact-wrapper {
-        width: 100%;
-    }
-
-    .contact-text h3 {
-        text-align: center;
-    }
-
-    .sc-icn {
-        justify-content: center;
-    }
-
-    .bx {
-        padding: 2px;
-        font-size: 1.2rem;
-    }
-
-    .icn-link a {
-        font-size: 0.6rem;
-    }
-
-    .icn-link {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer-content, p {
-        font-size: 0.6rem;
-    }
-
-}
-
-@media (max-width: 375px) {
-    .portfolio-intro-text h3 {
-        text-align: center;
-    }
-
-    .bx {
-        font-size: 1rem;
-    }
-
-    .icn-link a {
-        font-size: 0.5rem;
-    }
-
-    .main-img img {
-        width: 170px;
-        height: 170px;
-    }
-
-    .aboutme-intro img {
-        width: 170px;
-        height: 170px;
+    .about-img img {
+        width: 400px;
     }
 
     .contact-img img {
-        width: 170px;
-        height: 170px;
-    }
-    
-       .aboutme-intro {
-        gap: 20px;
-    }
-    
-       .contact-content {
-        gap: 20px;
-    }
-}
-
-@media (max-width: 325px) {
-    main .bx {
-        font-size: 1.3rem;
-        right: 5px;
+        width: 400px;
     }
 
-    .sc-icn {
-        display: flex;
-        flex-wrap: nowrap;
-    }
-
-    .bx {
-        font-size: 0.8rem;
-    }
-
-    .icn-link a {
-        font-size: 0.3rem;
-    }
-    
-       .aboutme-intro {
-        gap: 16px;
-    }
-    
-       .contact-content {
-        gap: 16px;
-    }
-}
-
-/* ============ Project Section ============ */
-@media (max-width: 425px) {
-    .header {
-        width: 100%;
-    }
-
-    .profile {
+    .contact-icn {
         justify-content: center;
+        gap: 4px;
     }
 
-    .article-container {
-        width: 100%;
+    .icn-link {
+        flex-direction: row;
+        width: 141px;
     }
-
-    .profile img {
-        width: 75px;
-        height: 75px;
-    }
-
-    .contact-sct {
-        gap: 20px;
-    }   
 }
 
-@media (max-width: 325px) {
-    .profile-intro p {
-        font-size: 0.4rem;
+/* Laptop Size */
+@media (min-width: 1024px) {
+    /* Header Nav */
+    .burger-menu {
+        display: none;
     }
 
-    .profile-intro time {
-        font-size: 0.4rem;
+    header {
+        /* border: 3px solid red; */
+        position: fixed;
     }
 
-    .profile img {
-        width: 65px;
-        height: 65px;
-    }
-
-    .contact-sct {
+    nav {
         /* border: 3px solid green; */
-        gap: 12px;
+        position: relative;
+        top: 0;
+        z-index: 0;
         display: flex;
-        flex-wrap: nowrap;
+        flex-direction: column;
+        padding: 0;
     }
-    
+
+    nav ul {
+        border: 3px solid red;
+        display: flex;
+        justify-content: right;
+        gap: 14px;
+        margin-right: 10px;
+    }
+
+    nav ul li {
+        display: flex;
+        border-bottom: none;
+        padding: 0;
+    }
+
+    nav ul li a {
+        /* border: 3px solid red; */
+        border-bottom: 3px solid transparent;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    nav ul li a:hover {
+        border-bottom: 3px solid var(--primary-color);
+        padding: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    nav ul li a:active {
+        color: rgb(219, 219, 219);
+        transform: scale(0.95);
+    }
+
+    .my-logo p {
+        font-size: 2rem;
+    }
+/* Main Content */
+    main {
+        margin-top: 0;
+        min-height: 90vh;
+    }
+
+    .main-content {
+        flex-direction: row;
+    }
+
+    .main-intro h2 {
+        text-align: left;
+    }
+
+    .main-intro h3 {
+        text-align: left;
+    }
+
+    button {
+        margin: auto 0;
+    }
+
+    #skills {
+        min-height: 90vh;
+    }
+
+    #portfolio {
+        min-height: 90vh;
+    }
+
+    #about-me {
+        min-height: 90vh;
+    }
+
+    #contact {
+        min-height: 90vh;
+    }
+
+    .main-img img {
+        width: 350px;
+    }
+
+    .skl-card {
+        width: 250px;
+        height: auto;
+        gap: 12px;
+        padding: 14px;
+    }
+
+    .project img {
+        width: 280px;
+        height: 240px;
+    }
+
+    .aboutme-content {
+        flex-direction: row;
+    }
+
+    .about-img img {
+        width: 350px;
+    }
+
+    .contact-content {
+        flex-direction: row;
+    }
+
+    .contact-img img {
+        width: 350px;
+    }
+
+    .icn-link {
+        flex-direction: row;
+        width: 150px;
+    }
 }
 
-@media (max-width: 375px) {
-    .contact-sct {
-        gap: 16px;
+@media (min-width: 1200px) {
+    .skl-card {
+        width: 300px;
+        height: auto;
+        gap: 12px;
+        padding: 14px;
     }
+
+    .skl-card .bx {
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    
 }
